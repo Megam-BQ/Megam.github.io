@@ -1,0 +1,148 @@
+/* =================== GENERAL =================== */
+body {
+  background-color: #1b1726;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* =================== NAVBAR =================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.titulo-navbar {
+  flex: 1;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none; /* 🔹 elimina los puntos */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #ff9800;
+}
+
+/* =================== FORMULARIOS =================== */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  min-height: calc(100vh - 80px); /* 🔹 evita que quede muy arriba */
+}
+
+/* 🔹 Caja del formulario */
+.login-container,
+.registro-container {
+  background: #2c2540;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  width: 350px; /* 🔹 un poco más ancho */
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+h2 {
+  color: #ffeb3b;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* 🔹 Campos centrados y más grandes */
+input {
+  width: 90%;               /* 🔹 más grande que el botón */
+  max-width: 320px;
+  padding: 12px;
+  margin: 10px auto;        /* 🔹 centra cada input */
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  display: block;
+  text-align: center;
+}
+
+/* 🔹 Botón más pequeño y centrado */
+button {
+  width: 70%;
+  max-width: 250px;
+  padding: 12px;
+  background: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  display: block;
+  margin: 20px auto 10px;
+  text-align: center;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+/* 🔹 Enlace inferior */
+.link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.link a {
+  color: #ff9800;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  text-decoration: underline;
+  color: #ffcc33;
+}
+.error {
+  color: #ff3333;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Ocultar el registro al inicio (solo si usas ambas vistas en una misma página) */
+#registroContainer {
+  display: none;
+}

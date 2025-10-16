@@ -1,0 +1,96 @@
+/* 🔹 Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /* 🔹 Estilos generales */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1726;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* ===================================
+     🔹 NAVBAR
+  =================================== */
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #121015; /* Negro oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+  
+  /* Contenedor del logo y nombre */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Logo */
+  .logo {
+    height: 45px;
+    display: block;
+  }
+  
+  /* Cuadro con el nombre */
+  .nombre-cuadro {
+    background-color: #2c2133; /* tono oscuro morado/negro */
+    color: #ff9800; /* naranja para destacar */
+    padding: 6px 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 14px;
+    user-select: none;
+  }
+  
+  /* Título centrado */
+  .titulo-navbar {
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    user-select: none;
+  }
+  
+  /* Navegación a la derecha */
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  
+  .nav-links ul li a:hover {
+    color: #ff9800;
+    background-color: rgba(255, 152, 0, 0.2);
+  }
+  
+  /* Responsive (opcional: muestra hamburger solo en móvil) */
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+  }
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vista previa Semana</title>
+  <link rel="stylesheet" href="semana.css">
+  <style>
+    /* Tu CSS inline opcional */
+  </style>
+</head>
+<body>
+  <!-- Aquí va todo el contenido visible -->
+  <header class="navbar">
+    <!-- Logo + cuadro con nombre -->
+    <div class="logo-container">
+      <img src="Imagenes/logo upla.png" alt="Logo" class="logo">
+      <div class="nombre-cuadro">Megam BREÑA QUISPE</div>
+    </div>
+  
+    <!-- Texto centrado -->
+    <h1 class="titulo-navbar">Base<span> de </span> Datos II</h1>
+  
+    <!-- Enlaces a la derecha -->
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 id="titulo">Cargando...</h1>
+  <p id="loading">Obteniendo archivos desde GitHub...</p>
+  <ul class="file-list" id="fileList"></ul>
+  <pre id="filePreview" style="display:none;"></pre>
+
+   <!-- Enlace al JS -->
+   <script src="semanas.js"></script>
+</body>
+</html>
+

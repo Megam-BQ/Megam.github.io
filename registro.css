@@ -1,0 +1,119 @@
+/* ==== ESTILOS GENERALES ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #1b1726;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =================== NAVBAR =================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.logo img { height: 45px; }
+.titulo-navbar {
+  flex: 1;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links ul li a:hover {
+  color: #ff9800;
+}
+
+/* ==== FORMULARIO ==== */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.formulario h2 {
+  margin-bottom: 25px;
+  color: #2d3436;
+  font-size: 26px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input {
+  padding: 12px;
+  border: 1px solid #b2bec3;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.formulario input:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 5px rgba(9,132,227,0.5);
+  outline: none;
+}
+
+.formulario button {
+  background: #0984e3;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+  background: #74b9ff;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 600px) {
+  .formulario {
+    padding: 30px 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
