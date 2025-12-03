@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vista previa Semana</title>
+  <link rel="stylesheet" href="semana.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="Imagenes/logo upla.png" alt="Logo" class="logo">
+      <div class="nombre-cuadro">Megam BREÑA QUISPE</div>
+    </div>
+
+    <h1 class="titulo-navbar">Base <span>de</span> Datos II</h1>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 id="titulo">Cargando...</h1>
+  <p id="loading">Obteniendo archivos desde GitHub...</p>
+
+  <ul class="file-list" id="fileList"></ul>
+
+  <!-- 📄 VISOR PDF -->
+  <iframe id="pdfViewer" style="width:100%; height:650px; display:none; border:1px solid #ccc;"></iframe>
+
+  <!-- 📄 Vista previa de texto -->
+  <pre id="filePreview" style="display:none;"></pre>
+
+  <script src="semanas.js"></script>
+</body>
+</html>
+

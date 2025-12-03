@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos II</title>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos (para hamburguesa) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- 🔹 Barra de navegación (sticky, siempre arriba) -->
+    <header class="navbar">
+        <!-- Logo a la izquierda -->
+        <div class="logo">
+            <img src="Imagenes/logo upla.png" alt="Logo">
+        </div>
+
+        <!-- Texto centrado -->
+        <h1 class="titulo-navbar">Base<span> de </span> Datos II</h1>
+
+        <!-- Icono hamburguesa (solo móviles) -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Enlaces a la derecha -->
+        <nav class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+               <li><a href="login.html">Iniciar sesión</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- 🔹 Sección con fondo (desde el menú hasta el perfil) -->
+    <section id="Inicio" class="seccion-fondo">
+        <!-- Introducción -->
+        <div class="intro">
+            <h2>Introducción a la Base de Datos</h2>
+            <p>
+                Una base de datos es una recopilación organizada y estructurada de datos, <br>
+                almacenados electrónicamente y gestionados por un Sistema de Gestión de <br>
+                Bases de Datos (SGBD), que permite almacenar, buscar, recuperar y modificar <br>
+                información de manera eficiente. Estos sistemas son cruciales para organizar<br>
+                y acceder a grandes volúmenes de datos sobre diversos temas.<br>
+            </p>
+        </div>
+
+        <!-- Perfil -->
+        <section id="inicio" class="perfil">
+            <!-- Foto -->
+            <div class="foto-perfil">
+                <img src="Imagenes/perfil2.jpg" alt="Foto de perfil">
+            </div>
+
+            <!-- Texto -->
+            <div class="perfil-texto">
+                <h2>Sobre mí</h2>
+                <p>
+                    Mi nombre es <strong>Megam BREÑA QUISPE </strong>, estudiante de Ingeniería de Sistemas,
+                    apasionada por la programación y el manejo de datos.
+                </p>
+                <p>
+                    Este curso de <strong>Base de Datos II</strong> busca profundizar en el diseño,
+                    implementación y administración de bases de datos, explorando tanto
+                    modelos relacionales, mediante el uso de SQL.
+                </p>
+            </div>
+        </section>
+    </section>
+
+
+
+   <!-- 🔹 Sección de semanas -->
+<section id="proyectos" class="semanas">
+    <h2>Semanas de clase</h2>
+    <div class="grid-semanas">
+
+        <!-- 🔹 SEMANAS ORIGINALES (1 al 8 con tu información) -->
+        <div class="semana-card">
+            <img src="Imagenes/l1 (2).jpg" alt="Semana 1">
+            <h3>Semana 1</h3>
+            <p>Introducción al curso y conceptos básicos de bases de datos.</p>
+            <a href="semana.html?semana=01" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l2.png" alt="Semana 2">
+            <h3>Semana 2</h3>
+            <p>Modelado entidad-relación y normalización.</p>
+            <a href="semana.html?semana=02" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l3.jpg" alt="Semana 3">
+            <h3>Semana 3</h3>
+            <p>Lenguaje SQL: consultas básicas.</p>
+            <a href="semana.html?semana=03" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l4.jpg" alt="Semana 4">
+            <h3>Semana 4</h3>
+            <p>Consultas avanzadas en SQL y funciones agregadas.</p>
+            <a href="semana.html?semana=04" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l5.webp" alt="Semana 5">
+            <h3>Semana 5</h3>
+            <p>Procedimientos almacenados y triggers.</p>
+            <a href="semana.html?semana=05" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l6.webp" alt="Semana 6">
+            <h3>Semana 6</h3>
+            <p>Administración de usuarios y seguridad en bases de datos.</p>
+            <a href="semana.html?semana=06" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l7.jpg" alt="Semana 7">
+            <h3>Semana 7</h3>
+            <p>Transacciones y control de concurrencia.</p>
+            <a href="semana.html?semana=07" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l8.jpg" alt="Semana 8">
+            <h3>Semana 8</h3>
+            <p>Repaso y práctica de consultas complejas.</p>
+            <a href="semana.html?semana=08" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <!-- 🔹 SEMANAS NUEVAS (9 al 16) -->
+        <div class="semana-card">
+            <img src="Imagenes/l9.jpg" alt="Semana 9">
+            <h3>Semana 9</h3>
+            <p>Optimización de consultas y uso de índices.</p>
+            <a href="semana.html?semana=09" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l10.jpg" alt="Semana 10">
+            <h3>Semana 10</h3>
+            <p>Diseño físico de bases de datos.</p>
+            <a href="semana.html?semana=10" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l11.jpg" alt="Semana 11">
+            <h3>Semana 11</h3>
+            <p>Bases de datos distribuidas.</p>
+            <a href="semana.html?semana=11" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l12.jpg" alt="Semana 12">
+            <h3>Semana 12</h3>
+            <p>Bases de datos NoSQL: introducción y aplicaciones.</p>
+            <a href="semana.html?semana=12" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l13.jpg" alt="Semana 13">
+            <h3>Semana 13</h3>
+            <p>MongoDB: consultas y estructuras.</p>
+            <a href="semana.html?semana=13" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l14.jpg" alt="Semana 14">
+            <h3>Semana 14</h3>
+            <p>Big Data y almacenamiento masivo de datos.</p>
+            <a href="semana.html?semana=14" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l15.webp" alt="Semana 15">
+            <h3>Semana 15</h3>
+            <p>Minería de datos e introducción al Machine Learning.</p>
+            <a href="semana.html?semana=15" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+
+        <div class="semana-card">
+            <img src="Imagenes/l16.jpg" alt="Semana 16">
+            <h3>Semana 16</h3>
+            <p>Proyecto final y exposición.</p>
+            <a href="semana.html?semana=16" target="_blank">
+                <button>Ver más</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 🔹 Sección de Manuales con carrusel -->
+    <section class="manuales" id="manuales">
+        <h2>Manuales</h2>
+
+        <div class="carrusel">
+            <button class="flecha izquierda" aria-label="Anterior">&#10094;</button>
+
+            <div class="manuales-container">
+                <div class="manual-card">
+                    <img src="Imagenes/m1.jpg" alt="GitHub">
+                    <h3>Manual para crear una cuenta de GitHub</h3>
+                    <a href="https://github.com/Megam-BQ/Base-de-Datos-II/blob/main/Semana%2001/Manual_Cuenta_GH.pdf"
+                        target="_blank">
+                        <button class="btn-ir">Ir</button>
+                    </a>
+                </div>
+
+                <div class="manual-card">
+                    <img src="Imagenes/m2.jpg" alt="Deploy Web">
+                    <h3>Manual para subir una página web a GitHub</h3>
+                     <a href="https://github.com/Megam-BQ/Base-de-Datos-II/blob/9304204b100ec5dc6e7a5b2fac11b354939b6f84/Semana%2001/Manual_Sitio_web.pdf"
+                        target="_blank">
+                        <button class="btn-ir">Ir</button>
+                    </a>
+                </div>
+
+                <div class="manual-card">
+                    <img src="Imagenes/m3.jpg" alt="SQL Server y Azure">
+                    <h3>Manual de instalación de SQL Server </h3>
+                     <a href="https://github.com/Megam-BQ/Base-de-Datos-II/blob/f4687286edf413a79338f428251136b7c139c78f/Semana%2002/Manual%20de%20SQL_Instalar.pdf"
+                        target="_blank">
+                        <button class="btn-ir">Ir</button>
+                    </a>
+                </div>
+            </div>
+
+            <button class="flecha derecha" aria-label="Siguiente">&#10095;</button>
+        </div>
+    </section>
+
+
+    <!-- 🔹 Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>📧 Correo: S03781J@MS.UPLA.EDU.PE</p>
+        <p>📱 Teléfono: +51 987 654 321</p>
+        <p>🌐 GitHub: <a href="https://github.com/Megam-BQ/Base-de-Datos-II" target="_blank"
+                style="color:#ff9800;">github.com/TU_USUARIO</a></p>
+        <p>Hecho por: Megam BREÑA QUISPE</p>
+    </section>
+
+    <!-- Enlace al JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

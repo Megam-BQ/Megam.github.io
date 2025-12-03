@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Base de Datos II</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- 🔹 NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="Imagenes/logo upla.png" alt="Logo">
+    </div>
+    <h1 class="titulo-navbar">Base <span>de</span> Datos II</h1>
+
+
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Suscríbete</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔹 CONTENEDOR GENERAL -->
+  <div class="form-container">
+    <!-- Formulario de Login -->
+    <div class="login-container">
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm">
+        <input type="email" id="correo" placeholder="Correo institucional" required>
+        <input type="password" id="password" placeholder="Contraseña (4 números)" maxlength="4" required>
+        <button type="submit">Ingresar</button>
+      </form>
+      <p id="mensaje-error" class="error"></p>
+      <p class="link">¿No tienes cuenta? <a href="registro.html">Suscríbete aquí</a></p>
+    </div>
+
+    <!-- Formulario de Registro (oculto al inicio) -->
+    <div class="registro-container" id="registroContainer">
+      <h2>Suscribirse</h2>
+      <form id="registroForm">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="email" id="correoRegistro" placeholder="Correo institucional" required>
+        <input type="password" id="passwordRegistro" placeholder="Contraseña (mínimo 4 caracteres)" minlength="4" required>
+        <button type="submit">Crear cuenta</button>
+      </form>
+      <p class="link">¿Ya tienes cuenta? <a href="#" id="mostrarLogin">Inicia sesión</a></p>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,236 @@
+/* 🔹 Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* 🔹 Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1b1726;
+  color: white;
+  line-height: 1.6;
+}
+
+/* ===================================
+   🔹 NAVBAR
+=================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  z-index: 1000;
+}
+.logo img { height: 45px; }
+.titulo-navbar { flex: 1; text-align: center; font-size: 22px; font-weight: bold; color: white; letter-spacing: 1px; }
+.nav-links ul { display: flex; list-style: none; gap: 20px; }
+.nav-links ul li a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+.nav-links ul li a:hover { color: #ff9800; }
+.hamburger { display: none; font-size: 28px; cursor: pointer; color: white; }
+
+/* ===================================
+   🔹 SECCIONES
+=================================== */
+.seccion-fondo {
+  background: url("Imagenes/BD II.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px 40px;
+  color: white;
+}
+.seccion-fondo .intro, .seccion-fondo .perfil {
+  background: rgba(0,0,0,0.65);
+  border-radius: 15px;
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 1100px;
+}
+.intro { text-align: center; margin-bottom: 40px; }
+.intro h2 { color: #ffeb3b; font-size: 30px; margin-bottom: 15px; text-shadow: 2px 2px 6px rgba(0,0,0,0.8); }
+.intro p { font-size: 18px; line-height: 1.6; }
+
+/* 🔹 Perfil */
+.perfil { display:flex; align-items:center; justify-content:center; gap:40px; flex-wrap:wrap; margin:40px auto; max-width:1100px; }
+.foto-perfil img { width:250px; height:250px; border-radius:50%; border:5px solid #ff9800; object-fit:cover; box-shadow:0 4px 12px rgba(0,0,0,0.6); }
+.perfil-texto { max-width:600px; }
+.perfil-texto h2 { font-size:28px; color:#ffeb3b; margin-bottom:15px; }
+.perfil-texto p { font-size:18px; line-height:1.8; color:#f5f5f5; }
+
+/* 🔹 Sección de semanas */
+.semanas { 
+  background:#1b1726; 
+  padding:60px 40px; 
+  color:white; 
+  text-align:center; 
+}
+
+.semanas h2 { 
+  font-size:26px; 
+  margin-bottom:30px; 
+  color:#ffcc00; 
+}
+
+/* Cambié esta parte para que siempre haya 5 columnas */
+.grid-semanas { 
+  display:grid; 
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas fijas */
+  gap:25px; 
+}
+
+/* tarjetas normales */
+.semana-card {
+  background: #2c2540;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.semana-card:hover { 
+  transform: translateY(-5px); 
+  background: #362b55; 
+}
+.semana-card img { 
+  width: 100%; 
+  height: 160px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  margin-bottom: 15px; 
+}
+.semana-card h3 { 
+  font-size: 20px; 
+  margin-bottom: 8px; 
+}
+.semana-card p { 
+  font-size: 15px; 
+  margin-bottom: 12px; 
+}
+.semana-card button { 
+  background: #ff9800; 
+  border: none; 
+  padding: 8px 15px; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  color: white; 
+  font-weight: 500; 
+  transition: background 0.3s ease; 
+}
+.semana-card button:hover { 
+  background: #e68900; 
+}
+
+/* Centrar la semana 16 en una fila nueva */
+.grid-semanas .semana-card:nth-child(16) {
+  grid-column: 2 / 5; /* Ocupa columnas 2,3 y 4 para quedar centrada */
+  justify-self: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+/* ===================================
+   🔹 CONTACTO / FORMULARIOS
+=================================== */
+.contacto {
+  text-align: center;
+  padding: 30px 20px;
+  background: transparent;
+  margin: 40px auto;
+}
+.contacto h2, .suscribirse h2, .login h2 {
+  font-size: 24px; margin-bottom: 20px; color: #ffcc00;
+}
+.contacto .contact-box {
+  background: #2a223a;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 720px;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.contacto p { margin: 8px 0; font-size: 16px; color: #f3f3f3; }
+
+/* ===================================
+   🔹 MANUALES Y CARRUSEL (corregido)
+=================================== */
+.manuales { background: #1b1726; padding: 60px 20px; text-align: center; }
+.manuales h2 { color: #ffeb3b; margin-bottom: 30px; font-size: 28px; }
+
+/* Carrusel: centrado y con ancho máximo para no ocupar toda la pantalla */
+.carrusel {
+  position: relative;
+  max-width: 700px;    /* <- ancho máximo del carrusel (ajusta si quieres más grande) */
+  width: 90%;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* Contenedor que desliza: flex sin gaps horizontales */
+.manuales-container {
+  display: flex;
+  transition: transform 0.45s ease-in-out;
+  width: 100%;
+  /* NO poner margin en .manual-card para evitar problemas de cálculo */
+}
+
+/* Cada slide ocupa exactamente el ancho visible (1 por vez) */
+.manual-card {
+  flex: 0 0 100%; /* clave: 100% del ancho del .carrusel */
+  box-sizing: border-box;
+  text-align: center;
+  background: #2c2540;
+  padding: 20px;
+  border-radius: 12px;
+}
+.manual-card img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.manual-card h3 { margin-bottom: 12px; font-size: 1.1rem; color: #ffeb3b; }
+.manual-card .btn-ir {
+  background: #ff9800; border: none; padding: 10px 18px; border-radius: 8px; color: #fff; cursor: pointer;
+}
+.manual-card .btn-ir:hover { background: #e68900; }
+
+/* Flechas (dentro del carrusel) */
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 20;
+}
+.flecha.izquierda { left: 12px; }
+.flecha.derecha { right: 12px; }
+.flecha:hover { background: rgba(0,0,0,0.85); }
+
+/* ===================================
+   🔹 RESPONSIVE
+=================================== */
+@media (max-width: 768px) {
+  .perfil { flex-direction: column; text-align: center; }
+  .hamburger { display: block; }
+  .nav-links { display: none; position: absolute; top:65px; right:20px; background:black; border-radius:10px; padding:15px; }
+  .nav-links ul { flex-direction: column; gap: 12px; }
+  .nav-links.active { display:block; }
+
+  .carrusel { width: 95%; max-width: 560px; }
+  .manual-card img { max-height: 320px; }
+}
